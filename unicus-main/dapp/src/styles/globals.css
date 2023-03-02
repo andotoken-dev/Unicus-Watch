@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+  html{
+    color-scheme: dark;
+    background: linear-gradient(180deg, #323B95 0%, #1E2036 100%);
+  }
+}
+
+@media screen and (max-width: 740px) {
+  #hide {
+
+    visibility: hidden;
+    display: none;
+  }
+}
+@layer components{
+  .ctaButton{
+    @apply rounded-[18px] uppercase tracking-wider disabled:cursor-not-allowed disabled:opacity-80;
+    background: linear-gradient(30deg, rgb(60,75,239) 0%, rgb(60,75,239) 10%, rgb(103,129,203) 50%, rgb(165,215,167) 90%, rgb(165,215,167) 100%);
+    box-shadow: inset 0 0 12px rgba(255,255,255,0.7), 0 0 20px rgba(255,255,255,0.4);
+  }
+  .ctaButton:disabled{
+    background: #787878;
+  }
+  .ctaButton:hover:enabled{
+    background: linear-gradient(30deg, rgb(60,75,239) 0%, rgb(103,129,203) 20%, rgb(165,215,167) 60%, rgb(165,215,167) 100%);
+  }
+  .ctaHover:hover{
+    background: linear-gradient(30deg, rgb(60,75,239) 0%, rgb(103,129,203) 20%, rgb(165,215,167) 60%, rgb(165,215,167) 100%);
+    color: black;
+  }
+  .cta2Button{
+    @apply rounded-[18px] uppercase tracking-wider disabled:cursor-not-allowed disabled:opacity-80;
+    background: linear-gradient(30deg, rgb(109,27,129) 0%, rgb(109,27,129) 10%, rgb(183,129,237) 100%);
+    box-shadow: inset 0 0 12px rgba(255,255,255,0.7), 0 0 20px rgba(255,255,255,0.4);
+  }
+  .cta2Button:hover:enabled{
+    background: linear-gradient(30deg, rgb(109,27,129) 0%, rgb(183,129,237) 70%, rgb(183,129,237) 100%);
+  }
+  .cta2Hover:hover {
+    background: linear-gradient(30deg, rgb(109,27,129) 0%, rgb(183,129,237) 70%, rgb(183,129,237) 100%);
+  }
+  .cta2Button:disabled{
+    background: #787878;
+  }
+}

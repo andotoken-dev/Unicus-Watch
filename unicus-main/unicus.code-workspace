@@ -1,0 +1,12 @@
+{
+  "folders": [
+    {
+      "name": "Contracts",
+      "path": "./backend"
+    },
+    {
+      "name": "Dapp",
+      "path": "./dapp"
+    }
+  ]
+}
